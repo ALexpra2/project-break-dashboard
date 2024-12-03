@@ -13,10 +13,26 @@
         <a class='navRelog' href="../clock.html">Reloj</a>
         <a class='navlink' href="../link.html">Guardar Link</a>
     </nav>
-     
-    <p>HOLA MUNDO
-    </p> 
-
+    <main>
+        <div id="contenedorIzquierdo">
+        <div id="contenedorContraseña">
+            <p id="explicacion">Introcuce el numero de caracteres de la contraseña (entre 12 y 50)</p>
+            <input type="number" placeholder="12" id="longitudContraseña" min="12" max="50">
+            <button id="generarBtn">Generar</button>
+            <p id="contraseña"></p>
+        </div>
+        <div id="contenedorWheather">
+            <div id="datosCiudad">
+            </div>
+            <div id=contenedorHoras>
+                <ul id="datosHoras">
+                </ul>
+            </div>            
+        </div>
+    </div>
+    </main>     
+    <script src="./js/script-weather.js"></script>
+    <script src="./js/script-contraseña.js"></script>
     <script src="./js/script-home.js"></script>  
     <script src="./js/background.js"></script>  
 </body>
