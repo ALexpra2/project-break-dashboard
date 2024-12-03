@@ -1,13 +1,3 @@
-function imagenFondo() {
-
-    let variableAleatoria = Math.floor(Math.random() * (8 - 1 + 1) + 1);
-    //console.log(variableAleatoria);
-
-    document.body.style.backgroundImage = `url('img/imgFondo${variableAleatoria}.jpg')`;
-}
-
-setInterval(imagenFondo, 15000);
-
 /* `Math.random()` Para generar aleatoriedad
 - Mayúsculas: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 - Minúsculas: "abcdefghijklmnopqrstuvwxyz"
@@ -33,10 +23,6 @@ console.log(minuscula);
 console.log(numero);
 console.log(simbolo); */
 
-//Capturo el boto y le hago un evento click para inicira el calculo de contraseña
-
-const generarBtn = document.getElementById('generarBtn');
-generarBtn.addEventListener('click', obtenercontraseña);
 
 //Funcion para generar la contraseña
 
@@ -77,6 +63,12 @@ function obtenercontraseña() {
     console.log(contraseña);
 
 };
+
+//Capturo el boto y le hago un evento click para inicira el calculo de contraseña
+
+const generarBtn = document.getElementById('generarBtn');
+generarBtn.addEventListener('click', obtenercontraseña);
+
 
 
 

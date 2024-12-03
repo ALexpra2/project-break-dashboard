@@ -7,18 +7,6 @@
 
 mi endponit http://api.weatherapi.com/v1/current.json?key=3dbee8f312854b24910220444240212 &q=Granada&aqi=no*/
 
-// Genero aletoriedad de las imagenes de fondo y las incluyo en CSS
-
-function imagenFondo() {
-
-    let variableAleatoria = Math.floor(Math.random() * (8 - 1 + 1) + 1);
-    //console.log(variableAleatoria);
-
-    document.body.style.backgroundImage = `url('img/imgFondo${variableAleatoria}.jpg')`;
-} 
-
-//Inertvalo de refresco de la imagen de fondo
-setInterval(imagenFondo, 15000);
 
 //Traigo los datos en base dias
 
