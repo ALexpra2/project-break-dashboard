@@ -136,7 +136,6 @@ body {
     background-image: url('../img/imgFondo8.jpg');
     margin: 0;
     height: 100vh;
-    background-image: url('tu-imagen.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -160,19 +159,86 @@ nav a {
 }
 
 #contenedorWheather {
-    background-color: rgba(248, 252, 252, 0.3);
+    background-color:rgba(248, 252, 252, 0.3);
     color: whitesmoke;
-    width: 650px;
-    height: 350px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+    width: 550px;
+    height: 380px;   
     border-radius: 30px;
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    
 }
+
+.ciudad {
+    padding-left: 40px;
+    padding-top: 35px;
+    font-size: 25px;
+    
+}
+
+.ciudad p {
+    margin-top: 7px;
+}
+
+.datos {
    
- 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 500px;   
+    
+}
+
+.imagenTemperatura {  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    margin-top: 5px;
+}
+
+.imagenTemperatura img{
+    width: 100px;
+    padding-top: 10px;
+}
+
+.imagenTemperatura p {
+    font-size:25px ;
+    color: ;
+}
+
+.precHumVi {
+    font-size: 18px;
+   
+}
+
+.precHumVi p {
+    padding-top: 4px;
+   
+}
+
+#datosHoras {
+    display: flex;
+    gap:5px;
+   
+    margin-left: 40px;
+    margin-right: 40px;
+    overflow-x: scroll;
+    
+   
+}
+
+#datosHoras li {
+    padding: 5px;
+    list-style: none;
+    font-size: large;   
+    height: max-content;
+    
+
+}
+
+#datosHoras li p {
+    text-align: center;
+}

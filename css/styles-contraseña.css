@@ -136,8 +136,7 @@ table {
 body {
     background-image: url('../img/imgFondo8.jpg');
     margin: 0;
-    height: 100vh;
-    background-image: url('tu-imagen.jpg');
+    height: 100vh;    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
