@@ -225,9 +225,7 @@ nav a {
    
     margin-left: 40px;
     margin-right: 40px;
-    overflow-x: scroll;
-    
-   
+    overflow-x: scroll;   
 }
 
 #datosHoras li {
@@ -235,8 +233,6 @@ nav a {
     list-style: none;
     font-size: large;   
     height: max-content;
-    
-
 }
 
 #datosHoras li p {
@@ -249,9 +245,7 @@ footer {
     justify-content: flex-end;
     align-items:flex-end;
     height: 87vh;
-    margin-right:60px;
-    
-    
+    margin-right:60px;    
 }
 
 footer a {
@@ -263,4 +257,5 @@ footer a {
     background-color: #929495;
     margin-left: 30px;
     text-align: center;  
-    border-radius: 10px;}
+    border-radius: 10px;
+}

@@ -283,13 +283,11 @@ nav a {
 }
 
 .precHumVi {
-    font-size: 18px;
-   
+    font-size: 18px;   
 }
 
 .precHumVi p {
-    padding-top: 4px;
-   
+    padding-top: 4px;   
 }
 
 #datosHoras {
@@ -298,9 +296,7 @@ nav a {
    
     margin-left: 40px;
     margin-right: 40px;
-    overflow-x: scroll;
-    
-   
+    overflow-x: scroll;  
 }
 
 #datosHoras li {
@@ -308,8 +304,6 @@ nav a {
     list-style: none;
     font-size: large;   
     height: max-content;
-    
-
 }
 
 #datosHoras li p {
