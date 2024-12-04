@@ -129,8 +129,7 @@ table {
     border-spacing: 0;
 }
 
-/*___________________________________________________________*/
-/*   mi codigo   */
+/*_______________ Mi codigo ____________________________________________*/
 
 body {
     background-image: url('../img/imgFondo8.jpg');
@@ -139,6 +138,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: 2s ease all;
 }
 
 nav{
@@ -153,8 +153,7 @@ nav a {
     font-size: large;
     background-color: #929495;
     margin-left: 30px;
-    text-align: center;
-  
+    text-align: center;  
     border-radius: 10px;
 }
 
@@ -167,15 +166,13 @@ nav a {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    
+    transform: translate(-50%, -50%);    
 }
 
 .ciudad {
     padding-left: 40px;
     padding-top: 35px;
-    font-size: 25px;
-    
+    font-size: 25px;    
 }
 
 .ciudad p {
@@ -187,8 +184,7 @@ nav a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 500px;   
-    
+    width: 500px;       
 }
 
 .imagenTemperatura {  
@@ -206,7 +202,6 @@ nav a {
 
 .imagenTemperatura p {
     font-size:25px ;
-    color: ;
 }
 
 .precHumVi {
@@ -215,8 +210,7 @@ nav a {
 }
 
 .precHumVi p {
-    padding-top: 4px;
-   
+    padding-top: 4px;  
 }
 
 #datosHoras {

@@ -129,8 +129,8 @@ table {
     border-spacing: 0;
 }
 
-/*___________________________________________________________*/
-/*   mi codigo   */
+/*___________________ Mi codigo ________________________________________*/
+
  
 body {
     background-image: url('../img/imgFondo8.jpg');
@@ -139,11 +139,12 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
-     
+    transition: 2s ease all;     
 }
 
 nav {
+    display:flex;
+    justify-content: center;
     margin-top: 30px;
     padding-bottom: 30px;
 }
@@ -160,21 +161,34 @@ nav a {
     border-radius: 10px;
 }
 
+main {
+    display: flex;
+    margin-left: 30px;
+    gap:20px;
+
+}
 
 #contenedorIzquierdo {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 40px;
+    margin-top: 40px;    
     gap: 40px;
-    
+    width: 50%;       
 }
 
+#contenedorDerecho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    gap: 40px;  
+    width: 50%;  
+}
 
 /*Estilos para generador de contraseñas*/
-
-
 
 #contenedorContraseña {
     background-color: rgba(248, 252, 252, 0.3);
@@ -240,28 +254,24 @@ nav a {
     width: 550px;
     height: 380px;   
     border-radius: 30px;
-    margin-bottom: 50px;
-    
+    margin-bottom: 50px;    
 }
 
 .ciudad {
     padding-left: 40px;
     padding-top: 35px;
-    font-size: 25px;
-    
+    font-size: 25px;    
 }
 
 .ciudad p {
     margin-top: 7px;
 }
 
-.datos {
-   
+.datos {   
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 500px;   
-    
+    width: 500px;      
 }
 
 .imagenTemperatura {  
@@ -278,8 +288,7 @@ nav a {
 }
 
 .imagenTemperatura p {
-    font-size:25px ;
-    color: ;
+    font-size: 25px;    
 }
 
 .precHumVi {
@@ -308,6 +317,37 @@ nav a {
 
 #datosHoras li p {
     text-align: center;
+}
+
+
+/*Estilos para Reloj*/
+
+#clockContainer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(248, 252, 252, 0.3);
+    color: rgb(255, 255, 255);
+    width: 480px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+.hora {
+    padding-top: 17px;
+    font-size: 70px;
+}
+
+.fecha {  
+    font-size: 40px;
+}
+
+.mensaje {
+     color:white;
+    font-size: 20px;
+    text-align: center;   
 }
 
 

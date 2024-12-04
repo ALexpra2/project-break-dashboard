@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home.css">
     <title>Mi Dashboard</title>
 </head>
+
 <body>
     <nav>
         <a class='navContraseña' href="../password.html">Generador Contraseña</a>
@@ -15,25 +17,32 @@
     </nav>
     <main>
         <div id="contenedorIzquierdo">
-        <div id="contenedorContraseña">
-            <p id="explicacion">Introcuce el numero de caracteres de la contraseña (entre 12 y 50)</p>
-            <input type="number" placeholder="12" id="longitudContraseña" min="12" max="50">
-            <button id="generarBtn">Generar</button>
-            <p id="contraseña"></p>
-        </div>
-        <div id="contenedorWheather">
-            <div id="datosCiudad">
+            <div id="contenedorContraseña">
+                <p id="explicacion">Introcuce el numero de caracteres de la contraseña (entre 12 y 50)</p>
+                <input type="number" placeholder="12" id="longitudContraseña" min="12" max="50">
+                <button id="generarBtn">Generar</button>
+                <p id="contraseña"></p>
             </div>
-            <div id=contenedorHoras>
-                <ul id="datosHoras">
-                </ul>
-            </div>            
+            <div id="contenedorWheather">
+                <div id="datosCiudad">
+                </div>
+                <div id=contenedorHoras>
+                    <ul id="datosHoras">
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-    </main>     
-    <script src="./js/background.js"></script>  
-    <script src="./js/home.js"></script>  
+        <div id="contenedorDerecho">
+            <div id="clockContainer">            
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/background.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/clock.js"></script>
     <script src="./js/password.js"></script>
     <script src="./js/weather.js"></script>
 </body>
+
 </html>
