@@ -9,20 +9,30 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="palabra">
         <a class='navContraseña' href="../password.html">Generador Contraseña</a>
         <a class='navweather' href="../weather.html">El tiempo en Granada</a>
         <a class='navRelog' href="../clock.html">Reloj</a>
         <a class='navlink' href="../link.html">Guardar Link</a>
     </nav>
+    <nav id="icono">
+        <a class='navContraseña' href="../password.html">G</a>
+        <a class='navweather' href="../weather.html">T</a>
+        <a class='navRelog' href="../clock.html">R</a>
+        <a class='navlink' href="../link.html">G</a>
+    </nav>
     <main>
+        
+        
         <div id="contenedorIzquierdo">
+            
             <div id="contenedorContraseña">
                 <p id="explicacion">Introcuce el numero de caracteres de la contraseña (entre 12 y 50)</p>
                 <input type="number" placeholder="12" id="longitudContraseña" min="12" max="50">
                 <button id="generarBtn">Generar</button>
                 <p id="contraseña"></p>
             </div>
+            
             <div id="contenedorWheather">
                 <div id="datosCiudad">
                 </div>
@@ -32,10 +42,26 @@
                 </div>
             </div>
         </div>
+        
+        
         <div id="contenedorDerecho">
+            
             <div id="clockContainer">            
             </div>
+            
+            <div id="linkContainer">
+                <form>
+                <p><label for="nombre">Nombre</label></p>
+                <p><input type="text" name="nombre" id="nombre"></p>
+                <p><label for="url">Url</label></p>
+                <p><input type="text" name="url" id="url"></p>
+                <button id="guardarBtn">Guardar</button>
+                </form>
+                <div id="contenedorGuardado">                
+                </div>
+            </div>            
         </div>
+
     </main>
 
     <script src="./js/background.js"></script>
@@ -43,6 +69,7 @@
     <script src="./js/clock.js"></script>
     <script src="./js/password.js"></script>
     <script src="./js/weather.js"></script>
+    <script src="./js/link.js"></script>
 </body>
 
 </html>

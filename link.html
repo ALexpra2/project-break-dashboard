@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/link.css">
+    <title>Almacen de link</title>
+</head>
+
+<body>
+    <nav>
+    <a class='home' href="../index.html">Home</a>
+    </nav>
+    <main>
+        <div id="linkContainer">
+            <form>
+            <p><label for="nombre">Nombre</label></p>
+            <p><input type="text" name="nombre" id="nombre"></p>
+            <p><label for="url">Url</label></p>
+            <p><input type="text" name="url" id="url"></p>
+            <button id="guardarBtn">Guardar</button>
+            </form>
+            <div id="contenedorGuardado">                
+            </div>
+        </div>
+        <footer>            
+            <a class='navWeather' href="../weather.html">El tiempo en Granada</a>
+            <a class='navClock' href="../clock.html">Reloj</a>
+            <a class='navLink' href="../password.html">Generador Contraseña</a>
+        </footer>
+    </main>
+
+    <script src="./js/background.js"></script>
+    <script src="./js/link.js"></script>
+</body>

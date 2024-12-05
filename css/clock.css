@@ -171,7 +171,8 @@ nav a {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    margin-top: 40px;
 }
 
 .hora {
@@ -201,7 +202,7 @@ footer a {
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: whitesmoke;   
-    padding: 5px;
+    padding: 5px 8px;
     font-size: large;
     background-color: #929495;
     margin-left: 30px;
