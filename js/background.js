@@ -2,7 +2,7 @@
 
 function imagenFondo() {
 
-    let variableAleatoria = Math.floor(Math.random() * (8 - 1 + 1) + 1);
+    let variableAleatoria = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
     //console.log(variableAleatoria);
 
     document.body.style.backgroundImage = `url('img/imgFondo${variableAleatoria}.jpg')`;

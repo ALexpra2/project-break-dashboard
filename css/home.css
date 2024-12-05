@@ -140,7 +140,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: 2s ease all;     
+    transition: 3s ease-in all;     
 }
 
 nav {
@@ -207,14 +207,21 @@ main {
     align-items: center;
     flex-direction: column;
     border-radius: 30px;
-}  
-    
+}   
+
+#titulo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 25px;
+}
 
 #explicacion {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
     text-align: center;
-    padding: 15px;
+    padding: 8px;
+    padding-bottom: 0px;
 }
 
 #longitudContraseña {
@@ -369,9 +376,7 @@ main {
     align-items: center;
     flex-direction: column;
     border-radius: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   
-   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
 }
 
 form {
@@ -391,8 +396,7 @@ form {
     background-color: aliceblue;
     color: rgb(53, 53, 53);
     border-radius: 10px;
-    width: 400px;
-    
+    width: 400px;    
 }
 
 #guardarBtn {
@@ -413,11 +417,11 @@ form {
 /*elementos para hacer mi pagina responsive*/ 
 
 @media (max-width: 1175px) {
+
 main {
     display: flex;
     flex-direction: column;
-    gap:0px;
-   
+    gap:0px;   
 }
 
 #palabra {
@@ -427,7 +431,6 @@ main {
 #icono {
     display: block;
     display: flex;
-
 }
 
 #contenedorIzquierdo {
@@ -436,10 +439,8 @@ main {
     justify-content: space-around;
     align-items: center;
     margin-top: 20px; 
-    margin-left: 0px;   
-   
-    width: 100%; 
-        
+    margin-left: 0px;  
+    width: 100%;         
 }
 
 #contenedorDerecho {
@@ -448,18 +449,142 @@ main {
     justify-content:baseline;
     align-items: center;
     margin-top: 0px;
-    margin-bottom: 40px;
-     
+    margin-bottom: 40px;    
     width: 100%; 
-    
+}
 
+body {    
+    background-repeat:repeat-y;    
 }
-body {
+}
+
+/*_________________________________________________________*/
+
+@media (max-width: 560px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap:0px;       
+    }
     
-    background-repeat:repeat-y;
+    #palabra {
+        display: none;
+    }
     
-}
-}
+    #icono {
+        display: block;
+        display: flex;   
+    }
+    
+    body {        
+        background-repeat:repeat-y;        
+    }
+
+    /*____________________________________________*/
+
+    #linkContainer {        
+        width: 360px;               
+    }
+
+    #nombre, #url {
+        font-size: small;
+        width: 300px;
+    }
+
+    /*___________________________________________________*/
+
+    #clockContainer {        
+        width: 360px;       
+    }
+    
+    .hora {       
+        font-size: 50px;
+    }
+    
+    .fecha {  
+        font-size: 30px;
+    }
+    
+    .mensaje {       
+        font-size: 15px;          
+    }
+
+    /*_____________________________________________*/
+
+    #contenedorWheather {        
+        width: 360px;
+        height: 480px;            
+    }    
+    
+    .datos {   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 360px;      
+    }
+    
+    .imagenTemperatura {  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        margin-top: 0px;
+    }
+    
+    .imagenTemperatura img{
+        width: 100px;
+        padding-top: 0px;
+    }
+    
+    .imagenTemperatura p {
+        font-size: 25px;    
+    }
+    
+    .precHumVi {
+        font-size: 18px;   
+    }
+    
+    .precHumVi p {
+        padding-top: 3px;   
+    }
+    
+    #datosHoras {        
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;         
+    }        
+    
+    #datosHoras li p {
+        padding-bottom: 8px;
+    }
+
+    /*----------------------------------------------------------*/
+
+    #contenedorContraseña {        
+        width: 360px;
+        height: 360px;        
+    }   
+    
+    #titulo {        
+        font-size: 27px;        
+        padding-top: 20px;
+    }
+    
+    #explicacion {        
+        font-size: 17px;        
+    }    
+    
+    #contraseña {        
+        font-size: 16px;
+        text-align: left;        
+        height: 25px;
+        width: 300px;
+        padding-left: 20px;
+        padding-top: 10px;        
+    }    
+    
+    }
 
 
 

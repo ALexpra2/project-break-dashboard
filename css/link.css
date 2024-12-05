@@ -154,8 +154,12 @@ nav a {
     background-color: #929495;
     margin-left: 30px;
     text-align: center;  
-    border-radius: 10px;   
+    border-radius: 10px; 
+    font-size: x-large;  
 } 
+
+span {vertical-align:-3px;
+}
 
 #linkContainer {
     background-color: rgba(248, 252, 252, 0.3);
@@ -176,28 +180,38 @@ nav a {
    
 }
 
+#titulo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 25px;
+}
+
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 25px;
     text-align: center;
-    padding-top: 40px;
-    gap: 17px;
-    
-    
+    padding-top: 30px;
+    gap: 17px;   
 }
 
+
 #nombre, #url {
-    padding: 5px 10px;
+    padding: 5px 20px;
     text-align: center;
     border: rgb(72, 72, 72) linear 2px;
     background-color: aliceblue;
     color: rgb(53, 53, 53);
     border-radius: 10px;
     width: 400px;
+    text-align: left;
+    font-size:large;
+    
     
 }
+
 
 #guardarBtn {
     box-shadow: 3px 3px 2px 0px #e8ebec7a;
@@ -234,3 +248,40 @@ footer a {
     text-align: center;  
     border-radius: 10px;
 }
+
+/*_________________________________________________________*/
+
+@media (max-width: 560px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap:0px;       
+    }
+    
+    #palabra {
+        display: none;
+    }
+    
+    #icono {
+        display: block;
+        display: flex;   
+    }
+    
+    body {        
+        background-repeat:repeat-y;        
+    }
+
+    /*____________________________________________*/
+
+    #linkContainer {        
+        width: 360px;               
+    }
+
+    #nombre, #url {
+        font-size: small;
+        width: 300px;
+    }
+
+    
+    }
+

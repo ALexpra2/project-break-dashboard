@@ -149,19 +149,23 @@ nav a {
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: whitesmoke;   
-    padding: 5px;
+    padding: 6px;
     font-size: large;
     background-color: #929495;
     margin-left: 30px;
     text-align: center;  
-    border-radius: 10px;   
+    border-radius: 10px; 
+    font-size: x-large;  
 } 
+
+span {vertical-align:-3px;
+}
 
 #clockContainer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgba(248, 252, 252, 0.3);
     color: rgb(255, 255, 255);
-    width: 480px;
+    width: 500px;
     height: 250px;
     display: flex;
     justify-content: space-around;
@@ -209,3 +213,44 @@ footer a {
     text-align: center;  
     border-radius: 10px;
 }
+
+/*_________________________________________________________*/
+
+@media (max-width: 560px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap:0px;       
+    }
+    
+    #palabra {
+        display: none;
+    }
+    
+    #icono {
+        display: block;
+        display: flex;   
+    }
+    
+    body {        
+        background-repeat:repeat-y;        
+    }
+   
+    /*___________________________________________________*/
+
+    #clockContainer {        
+        width: 360px;       
+    }
+    
+    .hora {       
+        font-size: 50px;
+    }
+    
+    .fecha {  
+        font-size: 30px;
+    }
+    
+    .mensaje {       
+        font-size: 15px;          
+    }    
+    }
