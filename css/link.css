@@ -187,7 +187,7 @@ span {vertical-align:-3px;
     padding-top: 25px;
 }
 
-form {
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;

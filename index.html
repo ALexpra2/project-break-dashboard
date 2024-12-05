@@ -57,14 +57,15 @@ password
             </div>
             
             <div id="linkContainer">
-                <form>
-                <p><label for="nombre">Nombre</label></p>
-                <p><input type="text" name="nombre" id="nombre"></p>
-                <p><label for="url">Url</label></p>
-                <p><input type="text" name="url" id="url"></p>
-                <button id="guardarBtn">Guardar</button>
-                </form>
-                <div id="contenedorGuardado">                
+                <p id="tituloLink">Añade tu enlace para Guardar</p>
+                <div class="form">
+                    <p class="label"><label for="nombre">Nombre</label></p>
+                    <p><input type="text" placeholder="Nombre del enlace" name="nombre" id="nombre"></p>
+                    <p class="label"><label for="url">Url</label></p>
+                    <p><input type="text" placeholder="Pega aqui tu Url" name="url" id="url"></p>
+                    <button id="guardarBtn">Guardar</button>
+                </div>
+                <div id="contenedorGuardado">
                 </div>
             </div>            
         </div>
