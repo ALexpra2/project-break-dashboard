@@ -10,7 +10,7 @@ mi endponit http://api.weatherapi.com/v1/current.json?key=3dbee8f312854b24910220
 
 //Traigo los datos en base dias
 
-const apiUrl1 = 'http://api.weatherapi.com/v1/current.json?key=3dbee8f312854b24910220444240212&q=Granada&aqi=no';
+const apiUrl1 = 'https://api.weatherapi.com/v1/current.json?key=3dbee8f312854b24910220444240212&q=Granada&aqi=no';
 
 async function obtenerDatosCiudad() {
     try {
@@ -50,7 +50,7 @@ async function obtenerDatosCiudad() {
   
   //Traigo los datos en base horas
 
-  const apiUrl2 = 'http://api.weatherapi.com/v1/forecast.json?key=3dbee8f312854b24910220444240212&q=Granada&days=1&aqi=no&alerts=no'
+  const apiUrl2 = 'https://api.weatherapi.com/v1/forecast.json?key=3dbee8f312854b24910220444240212&q=Granada&days=1&aqi=no&alerts=no'
   
   async function obtenerDatosHoras() {
     try {
