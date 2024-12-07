@@ -412,11 +412,42 @@ main {
     border: 2px solid #d9d1d9;
     cursor: pointer;
     color: #ffffff;
-    cursor: pointer;
     font-size: 17px;
     padding: 7px 25px;
     margin-top:10px;
     width: 150px;
+}
+#contenedorGuardado {
+    margin: 40px;
+    overflow-y: scroll;
+}
+
+#ulContenedorGuardado{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+#ulContenedorGuardado li{
+    text-decoration: none;
+    list-style: none;
+    background-color: #929495;
+    padding: 6px 20px;
+    background: linear-gradient(rgb(130, 130, 130, 0,5), rgb(178, 178, 178));
+    background-color: #0000006f;
+    border-radius: 15px;
+    border: 2px solid #d9d8dd;
+    margin-top:15px
+    
+}
+
+#ulContenedorGuardado li a{
+
+     color: #ffffff;
+     text-decoration:none ;
+     font-weight:100 ;
+
 }
 
 /*elementos para hacer mi pagina responsive*/ 

@@ -1,40 +1,37 @@
 const guardarBtn = document.getElementById('guardarBtn');
-const contenedor = document.getElementById('contenedorGuardado');
 
+//localStorage.clear();
+console.log(localStorage);
+cargarEnPantalla();
 function cargarEnPantalla() {
 
-    let mislink = localStorage.getItem('mislink');
-    contenedor.innerHTML =`
-    <ul>
-       <li>${}
-    </ul>
-    `;
-    /* let enlaces = JSON.parse(localStorage.getItem('enlaces')) || [];
+    const contenedor = document.getElementById('ulContenedorGuardado');
+    let mislink = JSON.parse(localStorage.getItem('mislink')) || []; 
     
-    // Limpiar la lista antes de volver a cargarla
-    enlacesList.innerHTML = '';
+    contenedor.innerHTML = '';
     
-    // Agregar cada enlace como un elemento de lista
-    enlaces.forEach(enlace => {
+    mislink.forEach(enlace => {
         const li = document.createElement('li');
-        li.innerHTML = `<a href="${enlace.url}" target="_blank">${enlace.nombre}</a>`;
-        enlacesList.appendChild(li);
+        li.innerHTML = `
+        <a href="${enlace.url}" target="_blank">${enlace.nombre}</a>
+        `;
+        contenedor.appendChild(li);
     
-} */
+}); 
 
-
+}
 
 guardarBtn.addEventListener('click', () => {
 
-    const nombre = document.getElementById('nombre').value;
-    const url = document.getElementById('url').value;
+    const datonombre = document.getElementById('nombre').value;
+    const datourl = document.getElementById('url').value;
     
     //console.log(nombre);
     //console.log(url);
     
     let link = {
-    dato1: nombre,  
-    dato2: url  
+    nombre: datonombre,  
+    url: datourl  
     };    
     
     let mislink = localStorage.getItem('mislink');
@@ -50,5 +47,7 @@ guardarBtn.addEventListener('click', () => {
     localStorage.setItem('mislink', JSON.stringify(mislink));
     
     console.log(localStorage.getItem('mislink'));
-
+    
+    cargarEnPantalla()
+    
 });
