@@ -239,7 +239,8 @@ footer a {
     /*___________________________________________________*/
 
     #clockContainer {        
-        width: 360px;       
+        width: 360px;
+        top:35%       
     }
     
     .hora {       
@@ -252,5 +253,10 @@ footer a {
     
     .mensaje {       
         font-size: 15px;          
-    }    
+    } 
+    
+    footer {
+        justify-content: center;
+    }
+
     }

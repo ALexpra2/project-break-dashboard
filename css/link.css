@@ -314,6 +314,10 @@ footer a {
         width: 300px;
     }
 
+    footer {
+        justify-content: center;
+    }
+
     
     }
 

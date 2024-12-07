@@ -287,7 +287,9 @@ footer a {
 
     #contenedorWheather {        
         width: 360px;
-        height: 480px;            
+        height: 480px;
+        top:40%            
+
     }    
     
     .datos {   
@@ -331,6 +333,10 @@ footer a {
     
     #datosHoras li p {
         padding-bottom: 8px;
+    }
+
+    footer {
+        justify-content: center;
     }
 
     

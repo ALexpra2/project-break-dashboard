@@ -32,7 +32,7 @@ async function obtenerDatosCiudad() {
                   
         </div>
         <div class='precHumVi'>
-            <p>Precipitaciones: ${data.current.temp_c}<p>
+            <p>Precipitaciones: ${data.current.precip_mm} mm<p>
             <p>Humedad: ${data.current.humidity} %<p>      
             <p>Viento: ${data.current.wind_kph} kph<p>
 
