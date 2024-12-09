@@ -58,6 +58,9 @@ guardarBtn.addEventListener('click', () => {
     const datonombre = document.getElementById('nombre').value;
     const datourl = document.getElementById('url').value;
 
+    if (!datonombre || !datourl) {
+        alert('Por favor, completa los campos del formulario.');
+    }
     //console.log(nombre);
     //console.log(url);
 
