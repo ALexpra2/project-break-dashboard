@@ -60,6 +60,7 @@ guardarBtn.addEventListener('click', () => {
 
     if (!datonombre || !datourl) {
         alert('Por favor, completa los campos del formulario.');
+        return;
     }
     //console.log(nombre);
     //console.log(url);
