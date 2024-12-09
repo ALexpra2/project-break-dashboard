@@ -244,6 +244,65 @@ main {
     font-family: Arial;
     font-size: 17px;
     padding: 7px 25px;
+    animation: customAni 3s ease 0s 1 alternate backwards;
+}
+
+@keyframes customAni {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateX(-60px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateX(-40px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateX(-20px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateX(-10px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateX(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+      animation-timing-function: ease-out;
+      transform: translateX(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+
+
+#generarBtn:hover {
+    transform: scale(1.1);
+    color: #FFFFFF;
+    background: #333333;
+    text-shadow: #969696 0px 0px 5px, #9c9696 0px 0px 10px, #909090 0px 0px 15px, #a7a7a7 0px 0px 20px, #7e7979 0px 0px 50px, #929292 0px 0px 75px;
+    color: #FFFFFF;
+    background: #727272;
 }
 
 #contraseña {
@@ -416,6 +475,65 @@ main {
     padding: 7px 25px;
     margin-top:10px;
     width: 150px;
+    animation: customAni2 3s ease 0s 1 normal backwards;
+}
+
+@keyframes customAni2 {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateX(60px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateX(40px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateX(20px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateX(10px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateX(4spx);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+      animation-timing-function: ease-out;
+      transform: translateX(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+
+#guardarBtn:hover {
+    transform: scale(1.1);
+    color: #FFFFFF;
+    background: #333333;
+    text-shadow: #969696 0px 0px 5px, #9c9696 0px 0px 10px, #909090 0px 0px 15px, #a7a7a7 0px 0px 20px, #7e7979 0px 0px 50px, #929292 0px 0px 75px;
+    color: #FFFFFF;
+    background: #727272;
+    
 }
 #contenedorGuardado {
     margin: 40px;
@@ -432,9 +550,9 @@ main {
 #ulContenedorGuardado li{
     text-decoration: none;
     list-style: none;
-    background-color: #929495;
+    
     padding: 6px 20px;
-    background: linear-gradient(rgb(130, 130, 130, 0,5), rgb(178, 178, 178));
+    
     background-color: #0000006f;
     border-radius: 15px;
     border: 2px solid #d9d8dd;
@@ -447,8 +565,16 @@ main {
      color: #ffffff;
      text-decoration:none ;
      font-weight:100 ;
+     padding-right: 10px;
 
-}
+    }
+    
+    .eliminarBtn {
+        border-radius: 40px;
+        border-color:#dddce0;
+        background-color: #929495;
+        color:#f2f1f4;
+    }
 
 /*elementos para hacer mi pagina responsive*/ 
 
